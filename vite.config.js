@@ -9,5 +9,8 @@ export default defineConfig({
       '@api' : path.resolve(__dirname, './src/utils/api'),
     },
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  server: {
+    host: true
+  }
 })

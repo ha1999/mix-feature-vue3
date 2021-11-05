@@ -7,8 +7,7 @@ export default {
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld name="Le Ngoc Ha" :age="18" :date="1999" />
+  <router-view></router-view>
 </template>
 
 <style>
@@ -22,6 +21,6 @@ export default {
   align-items: center;
   flex-direction: column;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
