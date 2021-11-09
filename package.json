@@ -11,10 +11,12 @@
     "@headlessui/vue": "^1.4.1",
     "@heroicons/vue": "^1.0.5",
     "axios": "^0.24.0",
+    "mitt": "^3.0.0",
     "vee-validate": "^4.5.5",
     "vue": "^3.2.16",
     "vue-router": "4",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",

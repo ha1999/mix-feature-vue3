@@ -26,10 +26,10 @@
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <a
+              <router-link
                 v-for="item in navigation"
                 :key="item.name"
-                :href="item.href"
+                :to="item.href"
                 :class="[
                   item.current
                     ? 'bg-gray-900 text-white'
@@ -37,7 +37,7 @@
                   'px-3 py-2 rounded-md text-sm font-medium',
                 ]"
                 :aria-current="item.current ? 'page' : undefined"
-              >{{ item.name }}</a>
+              >{{ item.name }}</router-link>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/vue/outline";
 
 const navigation = [
   { name: "Short Link", href: "#dash-board", current: true },
-  { name: "English", href: "#team", current: false },
+  { name: "English", href: "/study-english", current: false },
   { name: "Daily", href: "#project", current: false },
   { name: "Statis", href: "#calendar", current: false },
 ];
@@ -174,6 +174,10 @@ export default {
   },
   setup() {
     const enabled = ref(false);
+    const link_active = ref('')
+    function activeLink(){
+      
+    }
     return {
       enabled,
       navigation,

@@ -3,8 +3,11 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      height: {
-        '65vh': '65vh'
+      minHeight: {
+        '65': '65vh'
+      },
+      minWidth: {
+        '350': '350px'
       }
     },
   },
