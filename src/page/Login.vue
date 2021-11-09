@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="flex items-center justify-center">
-    <div class="px-8 py-6 mt-4 text-left bg-white shadow-xl">
+  <div class="flex items-center justify-center w-full h-screen bg-gray-800">
+    <div class="px-8 py-6 mt-4 text-left bg-white shadow-xl rounded-lg">
       <div class="flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export default {
           />
         </svg>
       </div>
-      <h3 class="text-2xl font-bold text-center">Login to your account</h3>
+      <h3 class="text-2xl font-bold text-center">Login to our system</h3>
       <form action="">
         <div class="mt-4">
           <div>
