@@ -2,29 +2,28 @@
 import { onMounted, reactive, watch, ref } from "vue"
 import say from "../../utils/common/say"
 import {getPageWord} from '@api/english'
+import Pagination from '../Pagination.vue'
 export default {
-  name: "TableWord",
-  setup() {
-    
-    const mix_query = reactive({
-        skip: 1,
-        search: '',
-        limit: 25,
-
-    })
-    const list_word = ref([])
-
-    const sayEnglish = (message) =>  {
-      say(message)
-    }
-    onMounted(() => {
-        getPageWord({...mix_query}).then(data => list_word.value = data)
-    })
-    watch(mix_query, () => getPageWord({...mix_query}) )
-    return {
-      sayEnglish,
-    }
-  },
+    name: "TableWord",
+    setup() {
+        const mix_query = reactive({
+            skip: 1,
+            search: "",
+            limit: 25,
+        });
+        const list_word = ref([]);
+        const sayEnglish = (message) => {
+            say(message);
+        };
+        onMounted(() => {
+            getPageWord({ ...mix_query }).then(data => list_word.value = data);
+        });
+        watch(mix_query, () => getPageWord({ ...mix_query }));
+        return {
+            sayEnglish,
+        };
+    },
+    components: { Pagination }
 }
 </script>
 
@@ -139,5 +138,6 @@ export default {
         </table>
       </div>
     </div>
+    <Pagination :current_page="1" :total="20" />
   </section>
 </template>
