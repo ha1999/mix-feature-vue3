@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instanceAxios = () =>  axios.create({
-    baseURL: '',
+    baseURL: process.env.node_env === 'production' ? 'https://fastapi-app-english.herokuapp.com/' : 'http://localhost:8000/',
     withCredentials: true,
     timeout: 1000
 })

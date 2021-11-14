@@ -2,19 +2,27 @@
   "name": "vue_3_composition",
   "version": "0.0.0",
   "scripts": {
+    "dev-local": "vite --port 8080",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.4.1",
+    "@heroicons/vue": "^1.0.5",
     "axios": "^0.24.0",
+    "mitt": "^3.0.0",
     "vee-validate": "^4.5.5",
     "vue": "^3.2.16",
     "vue-router": "4",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
     "vite": "^2.6.4"
   }
 }
